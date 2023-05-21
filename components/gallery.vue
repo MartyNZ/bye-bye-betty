@@ -48,7 +48,7 @@ const plusSlides = (n) => {
       <div class="-m-1 flex flex-wrap md:-m-2">
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(1);
@@ -60,7 +60,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(2);
@@ -72,7 +72,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(3);
@@ -84,7 +84,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(4);
@@ -96,7 +96,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(5);
@@ -108,7 +108,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(6);
@@ -120,7 +120,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(7);
@@ -132,7 +132,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(8);
@@ -144,7 +144,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(9);
@@ -156,7 +156,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(10);
@@ -168,7 +168,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(11);
@@ -180,7 +180,7 @@ const plusSlides = (n) => {
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <nuxt-img
+            <img
               @click="
                 openModal();
                 currentSlide(12);
