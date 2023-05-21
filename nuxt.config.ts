@@ -8,6 +8,15 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      title:
+        "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is currently being prepared for sale and will ba available shortly.",
+        },
+      ],
       script: [
         {
           src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
