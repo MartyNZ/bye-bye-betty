@@ -1,35 +1,40 @@
 <template>
-  <div class="page">
-    <main>
-      <div id="carousel">
-        <ClientOnly>
-          <Carousel />
-        </ClientOnly>
-      </div>
-      <div id="overview">
-        <Overview />
-      </div>
-      <div id="details">
-        <Details />
-      </div>
-      <div id="gallery">
-        <ClientOnly>
-          <Gallery />
-        </ClientOnly>
-      </div>
-      <div id="register">
-        <ClientOnly>
-          <FormsRegister />
-        </ClientOnly>
-      </div>
-      <div id="information">
-        <Information />
-      </div>
-    </main>
+  <div>
+    <SeoKit />
+    <OgImageScreenshot />
+    <OgImageStatic />
+    <div class="page">
+      <main>
+        <div id="carousel">
+          <ClientOnly>
+            <Carousel />
+          </ClientOnly>
+        </div>
+        <div id="overview">
+          <Overview />
+        </div>
+        <div id="details">
+          <Details />
+        </div>
+        <div id="gallery">
+          <ClientOnly>
+            <Gallery />
+          </ClientOnly>
+        </div>
+        <div id="register">
+          <ClientOnly>
+            <FormsRegister />
+          </ClientOnly>
+        </div>
+        <div id="information">
+          <Information />
+        </div>
+      </main>
 
-    <footer>
-      <AppFooter />
-    </footer>
+      <footer>
+        <AppFooter />
+      </footer>
+    </div>
   </div>
 </template>
 

@@ -1,7 +1,0 @@
-{
-  "name": "nuxt-tailwind-elements-starter",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "custom"
-}
