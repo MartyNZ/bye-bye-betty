@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
+    "@vite-pwa/nuxt",
   ],
   app: {
     head: {
