@@ -7,7 +7,7 @@
         purchase.
       </p>
       <p>
-        Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox,
+        Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox
         coupled with the two ratio 4WD, still gets the job done and continues to
         look good doing it.
       </p>
