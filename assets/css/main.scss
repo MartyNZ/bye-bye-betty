@@ -2,6 +2,7 @@
 @layer base {
   html {
     @apply text-neutral-800;
+    @apply bg-neutral-50;
   }
   html.dark {
     @apply text-neutral-50;

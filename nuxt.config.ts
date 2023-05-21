@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@vite-pwa/nuxt", "@nuxtjs/color-mode", "@nuxtjs/google-fonts"],
+  modules: [
+    "@vite-pwa/nuxt",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/google-fonts",
+    "@nuxt/image-edge",
+  ],
   app: {
     head: {
       script: [
