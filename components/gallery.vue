@@ -197,67 +197,62 @@ const plusSlides = (n) => {
       <span class="close cursor" @click="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
-          <div class="numbertext">1 / 13</div>
+          <div class="numbertext">1 / 12</div>
           <img src="/images/20230517-betty-0503.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">2 / 13</div>
+          <div class="numbertext">2 / 12</div>
           <img src="/images/20230517-betty-0505.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">3 / 13</div>
+          <div class="numbertext">3 / 12</div>
           <img src="/images/20230517-betty-0510.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 13</div>
+          <div class="numbertext">4 / 12</div>
           <img src="/images/20230517-betty-0513.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">5 / 13</div>
-          <img src="/images/20230517-betty-0514.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">6 / 13</div>
+          <div class="numbertext">5 / 12</div>
           <img src="/images/20230517-betty-0515.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">7 / 13</div>
+          <div class="numbertext">6 / 12</div>
           <img src="/images/20230517-betty-0517.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">8 / 13</div>
+          <div class="numbertext">7 / 12</div>
           <img src="/images/20230517-betty-0518.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">9 / 13</div>
+          <div class="numbertext">8 / 12</div>
           <img src="/images/20230517-betty-0521.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">10 / 13</div>
+          <div class="numbertext">9 / 12</div>
           <img src="/images/20230517-betty-0523.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">11 / 13</div>
+          <div class="numbertext">10 / 12</div>
           <img src="/images/20230517-betty-0526.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">12 / 13</div>
+          <div class="numbertext">11 / 12</div>
           <img src="/images/20230517-betty-0528.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">13 / 13</div>
+          <div class="numbertext">12 / 12</div>
           <img src="/images/20230517-betty-0533.jpg" style="width: 100%" />
         </div>
 
@@ -307,7 +302,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0514.jpg"
+              src="/images/20230517-betty-0515.jpg"
               @click="currentSlide(5)"
             />
           </div>
@@ -315,7 +310,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0515.jpg"
+              src="/images/20230517-betty-0517.jpg"
               @click="currentSlide(6)"
             />
           </div>
@@ -323,7 +318,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0517.jpg"
+              src="/images/20230517-betty-0518.jpg"
               @click="currentSlide(7)"
             />
           </div>
@@ -331,7 +326,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0518.jpg"
+              src="/images/20230517-betty-0521.jpg"
               @click="currentSlide(8)"
             />
           </div>
@@ -339,7 +334,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0521.jpg"
+              src="/images/20230517-betty-0523.jpg"
               @click="currentSlide(9)"
             />
           </div>
@@ -347,7 +342,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0523.jpg"
+              src="/images/20230517-betty-0526.jpg"
               @click="currentSlide(10)"
             />
           </div>
@@ -355,7 +350,7 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0526.jpg"
+              src="/images/20230517-betty-0528.jpg"
               @click="currentSlide(11)"
             />
           </div>
@@ -363,16 +358,8 @@ const plusSlides = (n) => {
           <div class="column">
             <img
               class="demo"
-              src="/images/20230517-betty-0528.jpg"
-              @click="currentSlide(12)"
-            />
-          </div>
-
-          <div class="column">
-            <img
-              class="demo"
               src="/images/20230517-betty-0533.jpg"
-              @click="currentSlide(13)"
+              @click="currentSlide(12)"
             />
           </div>
         </div> -->
