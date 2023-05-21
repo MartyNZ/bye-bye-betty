@@ -4,7 +4,7 @@
     <div>
       <p>
         This vehicle is currently being prepared for sale and is expected to be
-        available early May.
+        available early June.
       </p>
     </div>
     <p class="mb-4">

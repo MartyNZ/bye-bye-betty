@@ -42,7 +42,7 @@
                     Warrant of Fitness
                   </td>
                   <td class="whitespace-nowrap px-6 py-4">
-                    valid untill July 2023
+                    valid until July 2023
                   </td>
                 </tr>
                 <tr
@@ -52,7 +52,7 @@
                     Registered
                   </td>
                   <td class="whitespace-nowrap px-6 py-4">
-                    valid untill May 2024
+                    valid until May 2024
                   </td>
                 </tr>
                 <tr

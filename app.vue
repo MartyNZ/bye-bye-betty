@@ -6,6 +6,9 @@
           <Carousel />
         </ClientOnly>
       </div>
+      <div id="overview">
+        <Overview />
+      </div>
       <div id="details">
         <Details />
       </div>
@@ -77,9 +80,12 @@
     gap: 0.75rem;
     // grid-template-columns: 1fr;
     // grid-template-rows: repeat(5, auto);
-    grid-template-areas: "carousel" "details" "gallery" "register" "information";
+    grid-template-areas: "carousel" "overview" "details" "gallery" "register" "information";
     #carousel {
       grid-area: carousel;
+    }
+    #overview {
+      grid-area: overview;
     }
     #details {
       grid-area: details;
@@ -103,6 +109,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "carousel carousel carousel"
+      "overview overview overview"
       "details gallery gallery"
       "register gallery gallery"
       "information information information";
