@@ -49,10 +49,10 @@
                   class="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600"
                 >
                   <td class="whitespace-nowrap px-6 py-4 font-medium">
-                    Registered
+                    Registration
                   </td>
                   <td class="whitespace-nowrap px-6 py-4">
-                    valid until May 2024
+                    valid until November 2023
                   </td>
                 </tr>
                 <tr

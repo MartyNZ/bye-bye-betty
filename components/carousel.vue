@@ -16,7 +16,7 @@
         data-te-carousel-item
         data-te-carousel-active
       >
-        <img
+        <nuxt-img
           src="/images/20230517-betty-0521_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
@@ -28,7 +28,7 @@
         data-te-carousel-fade
         data-te-carousel-item
       >
-        <img
+        <nuxt-img
           src="/images/20230517-betty-0523_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
@@ -40,7 +40,7 @@
         data-te-carousel-fade
         data-te-carousel-item
       >
-        <img
+        <nuxt-img
           src="/images/20230517-betty-0526_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
@@ -52,7 +52,7 @@
         data-te-carousel-fade
         data-te-carousel-item
       >
-        <img
+        <nuxt-img
           src="/images/20230517-betty-0528_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
@@ -64,7 +64,7 @@
         data-te-carousel-fade
         data-te-carousel-item
       >
-        <img
+        <nuxt-img
           src="/images/20230517-betty-0513_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
