@@ -11,9 +11,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
-        {
-          src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
-        },
+        // {
+        //   src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
+        // },
       ],
     },
   },
