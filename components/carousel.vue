@@ -20,6 +20,9 @@
           src="/images/20230517-betty-0521_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
+          width="1920"
+          height="1080"
+          format="webp"
         />
       </div>
       <!--Second item-->
@@ -32,6 +35,9 @@
           src="/images/20230517-betty-0523_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
+          width="1920"
+          height="1080"
+          format="webp"
         />
       </div>
       <!--Third item-->
@@ -44,6 +50,9 @@
           src="/images/20230517-betty-0526_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
+          width="1920"
+          height="1080"
+          format="webp"
         />
       </div>
       <!--Fourth item-->
@@ -56,6 +65,9 @@
           src="/images/20230517-betty-0528_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
+          width="1920"
+          height="1080"
+          format="webp"
         />
       </div>
       <!--Fifth item-->
@@ -68,6 +80,9 @@
           src="/images/20230517-betty-0513_carousel.jpg"
           class="block object-cover"
           alt="Jeep 2003 TJ Wrangler Renegade"
+          width="1920"
+          height="1080"
+          format="webp"
         />
       </div>
 

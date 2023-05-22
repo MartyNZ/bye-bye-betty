@@ -1,19 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ["nuxt-seo-kit"],
+  // extends: ["nuxt-seo-kit"],
   modules: [
-    "@vite-pwa/nuxt",
-    "@nuxtjs/color-mode",
+    // "@vite-pwa/nuxt",
+    // "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
-    "@vite-pwa/nuxt",
+    ,
   ],
   app: {
     head: {
       script: [
-        {
-          src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
-        },
+        // {
+        //   src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
+        // },
       ],
     },
   },
@@ -28,24 +28,24 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.scss"],
-  pwa: {
-    manifest: {
-      icons: [
-        {
-          src: "assets/images/logo_512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "any maskable",
-        },
-        {
-          src: "assets/images/logo_1024.png",
-          sizes: "1024x1024",
-          type: "image/png",
-          purpose: "any maskable",
-        },
-      ],
-    },
-  },
+  // pwa: {
+  //   manifest: {
+  //     icons: [
+  //       {
+  //         src: "assets/images/logo_512.png",
+  //         sizes: "512x512",
+  //         type: "image/png",
+  //         purpose: "any maskable",
+  //       },
+  //       {
+  //         src: "assets/images/logo_1024.png",
+  //         sizes: "1024x1024",
+  //         type: "image/png",
+  //         purpose: "any maskable",
+  //       },
+  //     ],
+  //   },
+  // },
   googleFonts: {
     families: {
       "Josefin+Sans": true,

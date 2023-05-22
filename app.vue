@@ -1,8 +1,8 @@
 <template>
   <div>
-    <SeoKit />
+    <!-- <SeoKit />
     <OgImageScreenshot />
-    <OgImageStatic />
+    <OgImageStatic /> -->
     <div class="page">
       <main>
         <div id="carousel">

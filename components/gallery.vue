@@ -48,145 +48,193 @@ const plusSlides = (n) => {
       <div class="-m-1 flex flex-wrap md:-m-2">
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(1);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0503.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(2);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0505.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(3);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0510.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(4);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0513.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(5);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0515.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(6);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0517.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(7);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0518.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(8);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0521.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(9);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0523.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(10);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0526.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(11);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0528.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
         <div class="flex w-1/3 flex-wrap">
           <div class="w-full p-1 md:p-2">
-            <img
+            <nuxt-img
               @click="
                 openModal();
                 currentSlide(12);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
               src="/images/20230517-betty-0533.jpg"
+              width="422"
+              height="281"
+              sizes="sm:88px md:340 lg:422"
+              format="wedp"
             />
           </div>
         </div>
