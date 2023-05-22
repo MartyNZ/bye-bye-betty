@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  experimental: {
+    payloadExtraction: false,
+  },
   runtimeConfig: {
     public: {
       siteUrl: "https://bye-bye-betty.netlify.app",
@@ -61,5 +64,8 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  image: {
+    dir: "/images",
   },
 });

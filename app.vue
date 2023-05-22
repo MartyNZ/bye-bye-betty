@@ -22,9 +22,9 @@
           </ClientOnly>
         </div>
         <div id="register">
-          <ClientOnly>
-            <FormsRegister />
-          </ClientOnly>
+          <!-- <ClientOnly> -->
+          <!-- <FormsRegister /> -->
+          <!-- </ClientOnly> -->
         </div>
         <div id="information">
           <Information />
