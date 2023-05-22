@@ -19,12 +19,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: "https://bye-bye-betty.netlify.app/",
+      siteUrl: "https://bye-bye-betty.netlify.app",
       siteName:
         "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
       siteDescription:
         "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is currently being prepared for sale and will ba available shortly.",
-      language: "en", // prefer more explicit language codes like `en-AU` over `en`
+      language: "en-NZ", // prefer more explicit language codes like `en-AU` over `en`
     },
   },
   css: ["~/assets/css/main.scss"],
