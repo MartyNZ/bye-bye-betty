@@ -6,15 +6,26 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
     "@nuxt/image-edge",
-    "@vite-pwa/nuxt",
+    "nuxt-mail",
+    "@vee-validate/nuxt",
   ],
+  mail: {
+    message: {
+      to: process.env.MAIL_T0,
+    },
+    smtp: {
+      host: process.env.MAIL_SMTP_HOST,
+      port: process.env.MAIL_SMTP_PORT,
+      auth: {
+        user: process.env.MAIL_AUTH_USER,
+        pass: process.env.MAIL_AUTH_PASS,
+      },
+    },
+  },
+  axios: { baseURL: process.env.BASE_URL },
   app: {
     head: {
-      script: [
-        // {
-        //   src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
-        // },
-      ],
+      script: [],
     },
   },
   runtimeConfig: {

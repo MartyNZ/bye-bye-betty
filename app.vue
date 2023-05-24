@@ -111,7 +111,7 @@
 }
 @media (min-width: 1024px) {
   .page main {
-    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: 40% 30% 30%;
     grid-template-areas:
       "carousel carousel carousel"
       "overview overview overview"
