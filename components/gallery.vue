@@ -198,67 +198,117 @@ const plusSlides = (n) => {
       <div class="modal-content">
         <div class="mySlides">
           <div class="numbertext">1 / 12</div>
-          <img src="/images/20230517-betty-0503.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0503.jpg"
+            style="width: 100%"
+            alt="Drivers side interior"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 12</div>
-          <img src="/images/20230517-betty-0505.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0505.jpg"
+            style="width: 100%"
+            alt="Dashboard"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 12</div>
-          <img src="/images/20230517-betty-0510.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0510.jpg"
+            style="width: 100%"
+            alt="Back seat"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 12</div>
-          <img src="/images/20230517-betty-0513.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0513.jpg"
+            style="width: 100%"
+            alt="Drivers side interior - wide view"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">5 / 12</div>
-          <img src="/images/20230517-betty-0515.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0515.jpg"
+            style="width: 100%"
+            alt="Back door interior"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">6 / 12</div>
-          <img src="/images/20230517-betty-0517.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0517.jpg"
+            style="width: 100%"
+            alt="Passenger side interior"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">7 / 12</div>
-          <img src="/images/20230517-betty-0518.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0518.jpg"
+            style="width: 100%"
+            alt="Front left quarter"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">8 / 12</div>
-          <img src="/images/20230517-betty-0521.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0521.jpg"
+            style="width: 100%"
+            alt="Front right quarter"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">9 / 12</div>
-          <img src="/images/20230517-betty-0523.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0523.jpg"
+            style="width: 100%"
+            alt="Right profile"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">10 / 12</div>
-          <img src="/images/20230517-betty-0526.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0526.jpg"
+            style="width: 100%"
+            alt="Right rear quarter"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">11 / 12</div>
-          <img src="/images/20230517-betty-0528.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0528.jpg"
+            style="width: 100%"
+            alt="Left rear quarter"
+          />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">12 / 12</div>
-          <img src="/images/20230517-betty-0533.jpg" style="width: 100%" />
+          <img
+            src="/images/20230517-betty-0533.jpg"
+            style="width: 100%"
+            alt="Engine bay"
+          />
         </div>
 
         <!-- Next/previous controls -->
-        <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-        <a class="next" @click="plusSlides(1)">&#10095;</a>
+        <a class="prev" @click="plusSlides(-1)" aria-label="previous"
+          >&#10094;</a
+        >
+        <a class="next" @click="plusSlides(1)" aria-label="next">&#10095;</a>
 
         <!-- Caption text -->
         <div class="caption-container">
