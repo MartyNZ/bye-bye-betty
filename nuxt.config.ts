@@ -25,7 +25,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  axios: { baseURL: process.env.BASE_URL },
   app: {
     head: {
       link: [
