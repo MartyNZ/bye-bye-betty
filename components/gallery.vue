@@ -305,10 +305,16 @@ const plusSlides = (n) => {
         </div>
 
         <!-- Next/previous controls -->
-        <a class="prev" @click="plusSlides(-1)" aria-label="previous"
+        <a
+          class="prev"
+          @click="plusSlides(-1)"
+          aria-label="previous"
+          rel="nofollow"
           >&#10094;</a
         >
-        <a class="next" @click="plusSlides(1)" aria-label="next">&#10095;</a>
+        <a class="next" @click="plusSlides(1)" aria-label="next" rel="nofollow"
+          >&#10095;</a
+        >
 
         <!-- Caption text -->
         <div class="caption-container">
