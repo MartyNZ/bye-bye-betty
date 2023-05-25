@@ -1,5 +1,6 @@
 <template>
   <div>
+    <VitePwaManifest />
     <SeoKit />
     <OgImageScreenshot />
     <OgImageStatic />
@@ -22,9 +23,9 @@
           </ClientOnly>
         </div>
         <div id="register">
-          <!--<ClientOnly>
+          <ClientOnly>
             <FormsRegister />
-          </ClientOnly>-->
+          </ClientOnly>
         </div>
         <div id="information">
           <Information />

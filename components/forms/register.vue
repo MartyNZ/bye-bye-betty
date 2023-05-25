@@ -39,7 +39,8 @@ const sendEmail = () => {
 
   mail
     .send({
-      from: `${name}, <${email}>`,
+      replyTo: `"${name}, <${email}>"`,
+      from: "martyn@thecooks.net.nz",
       to: "martyn@thecooks.net.nz",
       subject: "Enquiry about Betty",
       text: body,

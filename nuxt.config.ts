@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  experimental: {
+    payloadExtraction: false,
+  },
   extends: ["nuxt-seo-kit"],
   modules: [
     "@vite-pwa/nuxt",
@@ -22,10 +25,14 @@ export default defineNuxtConfig({
       },
     },
   },
-  axios: { baseURL: process.env.BASE_URL },
   app: {
     head: {
-      script: [],
+      link: [
+        { rel: "icon", href: "/favicon.ico" },
+        { rel: "apple-touch-icon", href: "/logo_180.png", sizes: "180x180" },
+        { rel: "mask-icon-icon", href: "/logo_512.png", color: "#EBEAEF" },
+      ],
+      meta: [{ name: "theme-color", content: "#EBEAEF" }],
     },
   },
   runtimeConfig: {
@@ -40,21 +47,39 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.scss"],
   pwa: {
+    registerType: "autoUpdate",
     manifest: {
+      name: "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
+      short_name: "Classic Jeep for Sale",
+      description:
+        "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is currently being prepared for sale and will ba available shortly.",
+      theme_color: "#EBEAEF",
       icons: [
         {
-          src: "assets/images/logo_512.png",
-          sizes: "512x512",
+          src: "logo_192.png",
+          sizes: "192x192",
           type: "image/png",
-          purpose: "any maskable",
         },
         {
-          src: "assets/images/logo_1024.png",
-          sizes: "1024x1024",
+          src: "logo_512.png",
+          sizes: "512x512",
           type: "image/png",
-          purpose: "any maskable",
         },
       ],
+    },
+    workbox: {
+      navigateFallback: "/",
+      // globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+    },
+    client: {
+      installPrompt: true,
+      // you don't need to include this: only for testing purposes
+      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
+      periodicSyncForUpdates: 1800,
+    },
+    devOptions: {
+      enabled: true,
+      type: "module",
     },
   },
   googleFonts: {
