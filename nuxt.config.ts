@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   ],
   mail: {
     message: {
-      to: process.env.MAIL_T0,
+      to: process.env.MAIL_TO,
     },
     smtp: {
       host: process.env.MAIL_SMTP_HOST,
@@ -70,13 +70,13 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: "/",
-      globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+      // globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
     },
     client: {
       installPrompt: true,
       // you don't need to include this: only for testing purposes
       // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-      // periodicSyncForUpdates: 20,
+      periodicSyncForUpdates: 1800,
     },
     devOptions: {
       enabled: true,
