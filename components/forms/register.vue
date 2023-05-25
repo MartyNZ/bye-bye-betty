@@ -40,7 +40,7 @@ const sendEmail = () => {
   mail
     .send({
       replyTo: `"${name}, <${email}>"`,
-      from: "connect@webconnectionz.com",
+      from: "martyn@thecooks.net.nz",
       to: "martyn@thecooks.net.nz",
       subject: "Enquiry about Betty",
       text: body,
