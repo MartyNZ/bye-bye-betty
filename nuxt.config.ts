@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  experimental: {
+    payloadExtraction: false,
+  },
   extends: ["nuxt-seo-kit"],
   modules: [
     "@vite-pwa/nuxt",
@@ -45,6 +48,7 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.scss"],
   pwa: {
+    registerType: "autoUpdate",
     manifest: {
       name: "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
       short_name: "Classic Jeep for Sale",
@@ -62,13 +66,21 @@ export default defineNuxtConfig({
           sizes: "512x512",
           type: "image/png",
         },
-        {
-          src: "logo_512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "any maskable",
-        },
       ],
+    },
+    workbox: {
+      navigateFallback: "/",
+      globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+    },
+    client: {
+      installPrompt: true,
+      // you don't need to include this: only for testing purposes
+      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
+      // periodicSyncForUpdates: 20,
+    },
+    devOptions: {
+      enabled: true,
+      type: "module",
     },
   },
   googleFonts: {
