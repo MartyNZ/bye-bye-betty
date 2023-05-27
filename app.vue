@@ -75,6 +75,10 @@
     font-size: 2rem;
   }
 }
+
+.error {
+  border: 1px solid red;
+}
 .page {
   display: grid;
   grid-template-rows: 1fr auto;

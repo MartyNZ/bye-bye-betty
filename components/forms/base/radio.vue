@@ -24,12 +24,12 @@ const props = defineProps({
     :value="value"
     @change="$emit('update:modelValue', value)"
     v-bind="$attrs"
-    id="exampleCheck10"
+    :id="`${type}-${label}`"
   />
   <label
     v-if="label"
     class="inline-block pl-[0.15rem] hover:cursor-pointer"
-    for="exampleCheck10"
+    :for="`${type}-${label}`"
   >
     {{ label }}
   </label>
