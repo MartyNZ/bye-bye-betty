@@ -11,7 +11,11 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "nuxt-mail",
     "@vee-validate/nuxt",
+    "nuxt-gtag",
   ],
+  gtag: {
+    id: "G-L3SW29SWY2",
+  },
   mail: {
     message: {
       to: process.env.MAIL_TO,
