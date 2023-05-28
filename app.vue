@@ -1,9 +1,14 @@
+<script setup>
+// defineOgImageStatic({
+//   component: "BettyOgImage",
+//   title: "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
+// });
+</script>
+
 <template>
   <div>
     <VitePwaManifest />
     <SeoKit />
-    <OgImageScreenshot />
-    <OgImageStatic />
     <div class="page">
       <main>
         <div id="carousel">
@@ -38,8 +43,6 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss">
 :root {

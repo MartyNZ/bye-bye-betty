@@ -91,7 +91,7 @@
           class="absolute bg-opacity-70 bg-yellow-500 top-0 right-0 left-0 w-full font-bold py-1 text-center text-opacity-100 text-xl sm:text-2xl md:text-4xl md:py-4 lg:text-6xl z-20"
         >
           <!--style="transform: translate(50%, 50%) rotate(45deg)"-->
-          Preparing for Private Sale!
+          Private Sale!
         </div>
       </div>
     </div>
