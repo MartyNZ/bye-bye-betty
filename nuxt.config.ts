@@ -35,8 +35,41 @@ export default defineNuxtConfig({
         { rel: "icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", href: "/logo_180.png", sizes: "180x180" },
         { rel: "mask-icon-icon", href: "/logo_512.png", color: "#EBEAEF" },
+        { rel: "canonical", href: "https://bye-bye-betty.netlify.app" },
       ],
-      meta: [{ name: "theme-color", content: "#EBEAEF" }],
+      meta: [
+        { name: "theme-color", content: "#EBEAEF" },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:image:src",
+          content: "https://bye-bye-betty.netlify.app/images/bettyOgImage.png",
+        },
+        {
+          property: "og:image",
+          content: "https://bye-bye-betty.netlify.app/images/bettyOgImage.png",
+        },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:url", content: "https://bye-bye-betty.netlify.app" },
+        { property: "og:locale", content: "en-NZ" },
+        {
+          property: "og:site_name",
+          content:
+            "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
+        },
+        {
+          name: "description",
+          content:
+            "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is now available for sale.",
+        },
+        {
+          property: "og:description",
+          content:
+            "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is now available for sale.",
+        },
+        { property: "og:type", content: "website" },
+      ],
     },
   },
   runtimeConfig: {
@@ -45,7 +78,7 @@ export default defineNuxtConfig({
       siteName:
         "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
       siteDescription:
-        "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is currently being prepared for sale and will ba available shortly.",
+        "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is now available for sale.",
       language: "en-NZ", // prefer more explicit language codes like `en-AU` over `en`
     },
   },
@@ -56,7 +89,7 @@ export default defineNuxtConfig({
       name: "2003 TJ.II Jeep Wrangler Renegade | A classic still in it's prime.",
       short_name: "Classic Jeep for Sale",
       description:
-        "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is currently being prepared for sale and will ba available shortly.",
+        "Built in 2003, this 6 Cylinder 4.0L engine, it's 5 speed manual gearbox coupled with the H/L ratio 4WD, still gets the job done and continues to look good doing it. The vehicle is now available for sale.",
       theme_color: "#EBEAEF",
       icons: [
         {
