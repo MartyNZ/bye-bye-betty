@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                   <td><strong>Asking price:</strong></td>
-                  <td><strong>$14,990`</strong></td>
+                  <td><strong>$14,990</strong></td>
                 </tr>
               </tbody>
             </table>
