@@ -83,11 +83,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="whitespace-nowrap px-6 py-4">
-                    <strong>Asking price:</strong>
+                  <td class="whitespace-nowrap px-6 py-4 font-semibold text-lg">
+                    Asking price:
                   </td>
-                  <td class="whitespace-nowrap px-6 py-4">
-                    <strong>$14,990</strong>
+                  <td class="whitespace-nowrap px-6 py-4 font-semibold text-lg">
+                    $14,990
                   </td>
                 </tr>
               </tbody>
