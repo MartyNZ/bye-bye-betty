@@ -83,8 +83,12 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><strong>Asking price:</strong></td>
-                  <td><strong>$14,990</strong></td>
+                  <td class="whitespace-nowrap px-6 py-4">
+                    <strong>Asking price:</strong>
+                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">
+                    <strong>$14,990</strong>
+                  </td>
                 </tr>
               </tbody>
             </table>
