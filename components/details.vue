@@ -82,6 +82,10 @@
                     2 (non-dealership) owners
                   </td>
                 </tr>
+                <tr>
+                  <td><strong>Asking price:</strong></td>
+                  <td><strong>$14,990`</strong></td>
+                </tr>
               </tbody>
             </table>
           </div>
