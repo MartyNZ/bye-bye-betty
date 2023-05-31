@@ -12,7 +12,19 @@ export default defineNuxtConfig({
     "nuxt-mail",
     "@vee-validate/nuxt",
     "nuxt-gtag",
+    "@nuxtjs/sanity",
   ],
+  sanity: {
+    projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+    dataset: process.env.SANITY_STUDIO_DATASET,
+    apiVersion: process.env.SANITY_STUDIO_API_VERSION,
+    additionalClients: {
+      preview: {
+        useCdn: false,
+        withCredentials: false,
+      },
+    },
+  },
   gtag: {
     id: "G-L3SW29SWY2",
   },

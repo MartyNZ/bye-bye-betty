@@ -25,6 +25,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "@nuxtjs/sanity": "^1.7.2",
     "@vee-validate/nuxt": "^4.9.5",
     "@vee-validate/yup": "^4.9.5",
     "nuxt-gtag": "^0.5.7",

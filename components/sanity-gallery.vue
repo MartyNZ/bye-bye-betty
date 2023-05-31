@@ -1,23 +1,45 @@
 <script setup>
 import { ref, nextTick, onMounted } from "vue";
 
+const sanity = useSanity();
+const query = groq`*[_type == 'betty'][0]{
+  slideImages[]{
+    'image':asset->url,
+    'assetId':asset->_id,
+    _key
+  }
+}`;
+
+const { data } = await useAsyncData("images", () => sanity.fetch(query));
+
+// const slideImages = data.slideImages;
+// const isArray = () => {
+//   return Array.isArray(slideImages);
+// };
+// const countArray = slideImages.map((item, index) => {
+//   return {
+//     ...item,
+//     count: slideImages.filter((_, i) => i === index).length,
+//   };
+// });
+
 let slides;
 
-const myModal = ref(null);
+const galleryModal = ref(null);
 
 onMounted(async () => {
   await nextTick();
-  slides = myModal.value.getElementsByClassName("mySlides");
+  slides = galleryModal.value.getElementsByClassName("mySlides");
 });
 
 const openModal = async () => {
   await nextTick();
-  if (myModal.value) myModal.value.style.display = "block";
+  if (galleryModal.value) galleryModal.value.style.display = "block";
 };
 
 const closeModal = async () => {
   await nextTick();
-  if (myModal.value) myModal.value.style.display = "none";
+  if (galleryModal.value) galleryModal.value.style.display = "none";
 };
 
 const currentSlide = (n) => {
@@ -26,7 +48,7 @@ const currentSlide = (n) => {
 
 const slideIndex = ref(1);
 const showSlides = (n) => {
-  if (!myModal.value) return;
+  if (!galleryModal.value) return;
   if (n > slides.length) slideIndex.value = 1;
   if (n < 1) slideIndex.value = slides.length;
   for (let i = 0; i < slides.length; i++) {
@@ -45,154 +67,35 @@ const plusSlides = (n) => {
   <section class="gallery">
     <div class="container mx-auto px-5 py-2 lg:px-12 lg:pt-10">
       <div class="-m-1 flex flex-wrap md:-m-2">
-        <div class="flex w-1/3 flex-wrap">
+        <div
+          v-for="image in data.slideImages"
+          :key="image._key"
+          class="flex w-1/3 flex-wrap"
+        >
           <div class="w-full p-1 md:p-2">
-            <img
+            <!-- <pre>{{ image }}</pre> -->
+            <!-- <img
               @click="
                 openModal();
                 currentSlide(1);
               "
               class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0521.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
+              :src="image.image"
+            /> -->
+            <SanityImage
               @click="
                 openModal();
-                currentSlide(2);
+                currentSlide(1);
               "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0523.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(3);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0526.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(4);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0528.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(5);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0503.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(6);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0505.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(7);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0510.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(8);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0513.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(9);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0515.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(10);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0517.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(11);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0518.jpg"
-            />
-          </div>
-        </div>
-        <div class="flex w-1/3 flex-wrap">
-          <div class="w-full p-1 md:p-2">
-            <img
-              @click="
-                openModal();
-                currentSlide(12);
-              "
-              class="block h-full w-full rounded-lg object-cover object-center"
-              src="/images/20230517-betty-0533.jpg"
+              :asset-id="image.assetId"
+              auto="format"
             />
           </div>
         </div>
       </div>
     </div>
     <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal" ref="myModal">
+    <div id="galleryModal" class="modal" ref="galleryModal">
       <span class="close cursor" @click="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">

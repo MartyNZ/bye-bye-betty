@@ -11,8 +11,12 @@
     <SeoKit />
     <div class="page">
       <main>
+        <div id="headline">
+          <h1>2003 TJ.II Jeep Wrangler Renegade</h1>
+        </div>
         <div id="carousel">
           <ClientOnly>
+            <!-- <SanityCarousel /> -->
             <Carousel />
           </ClientOnly>
         </div>
@@ -24,7 +28,8 @@
         </div>
         <div id="gallery">
           <ClientOnly>
-            <Gallery />
+            <SanityGallery />
+            <!-- <Gallery /> -->
           </ClientOnly>
         </div>
         <div id="register">
@@ -34,6 +39,8 @@
         </div>
         <div id="information">
           <Information />
+
+          <img src="/images/qrcode.png" />
         </div>
       </main>
 
@@ -85,8 +92,7 @@
 .page {
   display: grid;
   grid-template-rows: 1fr auto;
-  max-width: 100dvw;
-  max-width: 100vw;
+  max-width: 100%;
   main {
     width: 100%;
     display: grid;
@@ -94,6 +100,10 @@
     // grid-template-columns: 1fr;
     // grid-template-rows: repeat(5, auto);
     grid-template-areas: "carousel" "overview" "details" "gallery" "register" "information";
+
+    #headline {
+      display: none;
+    }
     #carousel {
       grid-area: carousel;
     }
@@ -102,6 +112,7 @@
     }
     #details {
       grid-area: details;
+      overflow: hidden;
     }
     #gallery {
       grid-area: gallery;
@@ -111,21 +122,73 @@
     }
     #information {
       grid-area: information;
-    }
-    #footer {
-      grid-area: footer;
+      img {
+        display: none;
+      }
     }
   }
 }
 @media (min-width: 1024px) {
   .page main {
-    // grid-template-columns: 40% 30% 30%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "carousel carousel carousel"
       "overview overview overview"
       "details gallery gallery"
-      "register gallery gallery"
-      "information information information";
+      "register register information";
+  }
+}
+@media only print {
+  :root {
+    h1,
+    h3,
+    h5 {
+      padding: 0.5rem 0.75rem;
+      font-weight: 500;
+    }
+    h2,
+    h4,
+    h6 {
+      padding: 0.5rem 0.75rem;
+      font-weight: 300;
+      font-style: italic;
+    }
+    font-family: system-ui;
+    .page {
+      main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "headline headline"
+          "overview gallery"
+          "details information";
+
+        #headline {
+          grid-area: headline;
+          display: block;
+          text-align: center;
+        }
+
+        #information {
+          text-align: center;
+          img {
+            max-width: 20ch;
+            height: auto;
+            display: inline;
+            margin-inline: auto;
+          }
+        }
+
+        #carousel {
+          display: none !important;
+        }
+        #register {
+          display: none !important;
+        }
+      }
+      footer {
+        display: none !important;
+      }
+    }
   }
 }
 </style>

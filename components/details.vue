@@ -1,15 +1,14 @@
 <template>
   <section class="details">
-    <h2>Vehicle Details</h2>
     <div class="flex flex-col">
-      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="">
         <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div class="overflow-hidden">
             <table class="min-w-full text-left text-sm font-light">
               <thead class="border-b font-medium dark:border-neutral-500">
                 <tr>
                   <th scope="col" class="px-6 py-4 text-lg" colspan="2">
-                    2003 Jeep TJ.II Wrangler Renegade
+                    Vehicle Details
                   </th>
                 </tr>
               </thead>
@@ -78,9 +77,7 @@
                   <td class="whitespace-nowrap px-6 py-4 font-medium">
                     Ownership
                   </td>
-                  <td class="whitespace-nowrap px-6 py-4">
-                    2 (non-dealership) owners
-                  </td>
+                  <td class="whitespace-nowrap px-6 py-4">2 owners</td>
                 </tr>
                 <tr>
                   <td class="whitespace-nowrap px-6 py-4 font-semibold text-lg">
