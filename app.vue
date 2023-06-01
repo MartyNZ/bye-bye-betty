@@ -28,8 +28,8 @@
         </div>
         <div id="gallery">
           <ClientOnly>
-            <SanityGallery />
-            <!-- <Gallery /> -->
+            <!-- <SanityGallery /> -->
+            <Gallery />
           </ClientOnly>
         </div>
         <div id="register">
